@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "f0276c37-3f61-458b-b3cc-6a3cc6e12f3e",
+		"name": "graphql-tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16170877"
+	},
+	"item": [
+		{
+			"name": "query book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\n  book(id: \"1\"){\n    id, name, genre\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/graphql",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
